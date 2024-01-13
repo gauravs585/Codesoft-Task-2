@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Roboto&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+body{
+    background: url('/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    margin: 0 10%;
+}
+.navbar{
+    height: 10%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .list{
+    width: 30%;
+}
+
+#logo{
+    
+    font-size: 1.5rem;
+}
+
+#color{
+    color: #f9e656;
+}
+.list-items{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-items li{
+    list-style-type: none;
+}
+
+.list-items li a{
+    text-decoration: none;
+}
+
+.list-items li a:hover{
+    color: #f9e656;
+}
+
+
+.main-content{
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.content{
+    width: 60%;
+}
+
+.title{
+    font-size: 3rem;
+}
+
+.sub-title{
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+.btn{
+    text-transform: uppercase;
+    background-color: #f9e656;
+    color: black;
+    margin-top: 30px;
+    width: 40%;
+    height: 10%;
+    cursor: pointer;
+}
+
+
+
+
+
+

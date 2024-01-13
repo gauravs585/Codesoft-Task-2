@@ -1,0 +1,217 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="resume1.css">
+    <title>Resume generator</title>
+</head>
+<body>
+    <div id="form">
+    <header>
+        <div class="container">
+        
+            <nav class="navbar">
+                <div class="information">
+                    <h1 id="name">Job Vista Resume Builder</h1>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    
+<section>      
+    <form id="form1">
+        <div class="form-1">
+            <div class="left-details">
+                <div class="personal-details">
+                    <h2>Personal details</h2>
+                    <label for="person-name">your Name</label><br>
+                    <input type="text" id="person-name" name="person-name" placeholder="enter here"  ><br>
+                    <label for="email">email</label><br>
+                    <input type="email" id="email" name="email" placeholder="enter here"  ><br>
+                    <label for="mobile-no">mobile no.</label><br>
+                    <input type="text" id="mobile-no" name="mobile-no" placeholder="enter here"  ><br>
+                    <label for="Address">Address</label><br>
+                    <textarea id="Address" name="Address" placeholder="enter here"  ></textarea><br>
+                    <label for="profile-photo">Profile Photo</label><br>
+                    <input type="file" id="profile-photo" name="profile-photo"><br>
+                </div>
+                <div class="certification">
+                    <h2>Certification</h2>
+                    <label for="certification-name">certification Name</label><br>
+                    <input type="text" id="certification-name" name="certification-name" placeholder="enter here"><br>
+                    <label for="certification-description">description</label><br>
+                    <textarea name="certification-description" placeholder="enter here"></textarea><br>
+                    <button type="button" class="btn Add">+ Add more</button>
+                </div>
+                <h2>Languages</h2>
+                <div>
+                <div class="language">
+                    <input type="text" id="language" name="language" placeholder="enter here"  ><br>
+                    <button type="button" class="btn Add">+ Add more</button>
+                </div>
+            </div>
+                <h2>Strength</h2>
+                <div class="strength">
+                    
+                    <input type="text" id="strenght" name="strength" placeholder="enter here"  ><br>
+                    <button type="button" class="btn Add">+ Add more</button>
+                </div>
+            </div>
+            <div class="right-details">
+                <div class="education">     
+                    <h2>Educational details</h2>
+                    <label for="degree-name">Degree Name</label><br>
+                    <input id="degree-name" name="degree-name" placeholder="enter here"  ><br>
+                    <label for="university">university</label><br>
+                    <input id="university" name="university" placeholder="enter here"  ><br>
+                    <label for="percentage">percentage</label><br>
+                    <input type="number" id="percentage" name="percentage" placeholder="enter here"  ><br>
+                    <button type="button" class="btn Add">+ Add more</button>
+                </div>
+                <div class="project">
+                    <h2>Project details</h2>
+                    <label for="pro-name">Project Name</label><br>
+                    <input type="text" id="pro-name" name="pro-name" placeholder="enter here"><br>
+                    <label for="pro-description">Project description</label><br>
+                    <textarea id="pro-description" name="pro-description" placeholder="enter here"></textarea><br>
+                    <button type="button" class="btn Add">+ Add more</button>
+                </div>
+                <h2>technical skill</h2>
+                <div class="technical">
+                    
+                    <input id="tech-skills" name="tech-skills" placeholder="enter here"  ><br>
+                    <button type="button" class="btn Add">+ Add more</button>
+                </div>
+                <div class="submit">
+                    <button type="submit" class="btn">Generate Resume</button>
+                    <!-- <input type="submit" value="submit" class="btn"> -->
+                </div>
+            </div> 
+            
+        </div> 
+        
+    </form>
+</section>
+</div>
+<div class="container" id="resume" style="display: none;">
+    <button type="button" class ="btn" id="back">←</button>
+    <h1>Resume</h1>
+    <div class="row">
+        <div class="col">
+            <div class="profile-photo">
+                <img src="" alt="Profile Photo" id="profile_photo">
+            </div>
+        </div>
+        <div class="col">
+            <div>
+                <div class="label">Name:</div>
+                <div class="value" id="person-name">Gaurav</div>
+            </div>
+            <div>
+                <div class="label">Email:</div>
+                <div class="value" id="email">abc@gmail.com</div>
+            </div>
+            <div>
+                <div class="label">Mobile No.:</div>
+                <div class="value" id="mobile-no">123456789</div>
+            </div>
+            <div>
+                <div class="label">Address:</div>
+                <div class="value" id="Address">Ghatkopar, Mumbai.</div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Certifications</div>
+        <div class="row">
+            <div class="col">
+            
+                <div class="label">Certification Name:</div>
+                <div class="value" id="certification-name">Certification A</div>
+                <div class="label">Certification Description:</div>
+                <div class="value" id="certification-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum velit et tortor hendrerit efficitur. </div>
+            </div>
+            <!-- <div class="col">
+                <div class="label">Certification Name:</div>
+                <div class="value">Certification B</div>
+                <div class="label">Certification Description:</div>
+                <div class="value">uhde iwdjoid ioejeoiej </div>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Languages</div>
+        <ul class="skill-list">
+                <li id="language">English</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Strengths</div>
+        <ul class="skill-list">
+            <li id="strength">Teamwork</li>
+            
+            <!-- <li>Problem Solving</li>
+            <li>Communication</li>
+            <li>Leadership</li> -->
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Education</div>
+        <div class="row">
+            <div class="col">
+                <div class="label">Degree Name:</div>
+                <div class="value" id="degree-name">Bachelor of Science in Computer Science</div>
+                <div class="label">University:</div>
+                <div class="value" id="university">University of mumbai</div>
+            </div>
+            <div class="col">
+                <div class="label">Percentage:</div>
+                <div class="value" id="percentage">65</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Projects</div>
+        <div class="row">
+            <div class="col">
+                <div class="label">Project Name:</div>
+                <div class="value" id="pro-name">Project A</div>
+                <div class="label">Project Description:</div>
+                <div class="value" id="pro-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illum a dolorum, corporis fugit sapiente dolorem sit tempore eveniet sunt dicta porro veritatis voluptatem ab nemo voluptas provident beatae adipisci.</div>
+            </div>
+            
+            <!-- <div class="col">
+                <div class="label">Project Name:</div>
+                <div class="value">Project B</div>
+                <div class="label">Project Description:</div>
+                <div class="value">ashkjh adhhdi aidjoj </div>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <ul class="skill-list">
+            <li id="tech-skills">Java</li>
+            
+            <!-- <li>Python</li>
+            <li>JavaScript</li>
+            <li>HTML/CSS</li> -->
+        </ul>
+    </div>
+</div>
+
+<script src="resume.js"></script>
+<script src="app.js" ></script>
+</body>
+</html>
